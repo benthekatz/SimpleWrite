@@ -6,14 +6,12 @@
   "main": "main.js",
   "scripts": {
     "start": "electron main.js",
-    "package": "",
-    "build": "electron-packager.simplewrite"
+    "build": "electron-packager.simplewrite . $npm_package_productName --prune --asar"
   },
   "author": "Benjamin Katz <benthekatz@gmail.com> (http://benthekatz.com)",
   "license": "MIT",
   "dependencies": {
-    "jquery": "^3.2.1",
-    "quill": "^1.3.4"
+    "jquery": "^3.2.1"
   },
   "devDependencies": {
     "electron": "^1.7.10",
